@@ -3,9 +3,14 @@ import CaseStudies from '@/components/case-studies/CaseStudies'
 import EngagementStrategies from '@/components/engagement-strategies/EngagementStrategies'
 import Expertise from '@/components/expertise'
 import FaqBox from '@/components/faqBox'
+import Head from 'next/head'
 
 export default function Home() {
   return (
+   <>
+   <Head>
+    <title>Nsigma</title>
+   </Head>
     <div className='bg-[#131517]'>
       <Banner />
       <section className='py-16'>
@@ -21,6 +26,7 @@ export default function Home() {
       <EngagementStrategies />
       <CaseStudies />
     </div>
+   </>
   )
 }
 
