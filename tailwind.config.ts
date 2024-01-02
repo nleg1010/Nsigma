@@ -16,6 +16,7 @@ const config: Config = {
       colors: {
         custm_pink: '#F7476B',
         Gray: '#1E2029',
+        lightGray: '#696B76',
       }
     },
   },
