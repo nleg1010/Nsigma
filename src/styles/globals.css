@@ -6,8 +6,18 @@
     margin: 0;
     box-sizing: border-box;
 }
-h1 span .grad{
+.grad{
     background: -webkit-linear-gradient(45deg, #EB9204, #83E868, #83E868);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
+}
+
+.line-border::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    border: 1px dashed gray;
+    height: 100%;
+    left: 50%;
+    z-index: 1;
+}
