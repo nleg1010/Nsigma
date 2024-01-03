@@ -6,7 +6,7 @@ interface ICaseStudiesItemsProps{
      item:any
 }
 
-const CaseStudies = () => {
+const CaseStudies = ({data}:any) => {
   return (
     <section className='container mx-auto pb-20 px-3 md:px-0' id="casestudy">
           <div className='relative'>
@@ -16,7 +16,7 @@ const CaseStudies = () => {
           </div>
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 md:mt-5'>
           {
-               [1,2,3,4].slice(0,3).map((item:any,idx:number)=>(
+               data.slice(0,3).map((item:any,idx:number)=>(
                     <CaseStudiesCard key={idx} data={item}/>
                ))
           }
