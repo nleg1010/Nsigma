@@ -33,7 +33,7 @@ export default function Header() {
                     </button>
                     <ul className={`md:flex-row z-50 flex-col gap-5 md:items-center items-start md:justify-end md:static  ${open ? "flex absolute left-0 right-0 top-16 md:p-0 px-4 py-10 bg-[#1d1a36] " : "md:flex hidden"}`}>
                         {
-                            NavItem.map((item, idx) => (
+                            NavItem.map((item:any, idx) => (
                                 <li key={idx} className='relative'
                                     onMouseEnter={handleSubMenuEnter}
                                     onMouseLeave={handleSubMenuLeave}
@@ -55,7 +55,7 @@ export default function Header() {
                                         item?.subNav?.length > 0 && subMenu && <div className='md:absolute md:pt-4 mt-4 md:mt-0 md:border-none border-l-[2px] border-custm_pink'>
                                             <ul className='md:bg-[#20262D]/50 md:p-4 px-6 rounded-xl'>
                                                 {
-                                                    item?.subNav?.map((sItem, id) => (
+                                                    item?.subNav?.map((sItem:any, id:number) => (
                                                         <li key={id} className='py-1'>
                                                             <Link href={sItem.link} className='md:text-lg whitespace-nowrap hover:text-custm_pink text-base font-semibold text-white uppercase' >{sItem.name}</Link>
                                                         </li>
