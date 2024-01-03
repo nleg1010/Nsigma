@@ -1,7 +1,7 @@
 import React from 'react'
 import TextTransition, { presets } from 'react-text-transition';
 
-const TEXTS = ['Driven', 'Driven'];
+const TEXTS = ['Powered', 'Dependent'];
 
 export default function Banner() {
 

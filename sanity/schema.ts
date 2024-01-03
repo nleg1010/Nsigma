@@ -6,5 +6,5 @@ import { questions } from './schema/questions'
 import { siteSettings } from './schema/siteSettings'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [siteSettings, questions, expertise, engagement, caseStudies],
+  types: [questions, expertise, engagement, caseStudies],
 }
