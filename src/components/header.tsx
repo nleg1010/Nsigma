@@ -7,11 +7,11 @@ import { IoClose } from "react-icons/io5";
 export default function Header() {
     const [open, setOpen] = useState(false)
     return (
-        <header className='py-3'>
+        <header className='py-3 z-50'>
             <div className='container mx-auto px-4 flex gap-7 items-center'>
-                <div className='md:w-1/4 w-1/2'>
+                <div className='md:w-1/4 w-1/2 z-50'>
                     <Link href="/" className='inline-block'>
-                        <Image src="/images/logo.png" alt='logo' width={156} height={48} />
+                        <Image src="/images/logo.png" alt='logo' width={156} height={48} className='z-50'/>
                     </Link>
                 </div>
                 <nav className='md:w-3/4 w-1/2 flex justify-end'>
@@ -20,7 +20,7 @@ export default function Header() {
                             open ? (<IoClose />) : (<FaBars />)
                         }
                     </button>
-                    <ul className={`md:flex-row flex-col gap-5 md:items-center items-start md:justify-end md:static  ${open ? "flex absolute left-0 right-0 top-16 md:p-0 px-4 py-10 bg-[#1d1a36] " : "md:flex hidden"}`}>
+                    <ul className={`md:flex-row z-50 flex-col gap-5 md:items-center items-start md:justify-end md:static  ${open ? "flex absolute left-0 right-0 top-16 md:p-0 px-4 py-10 bg-[#1d1a36] " : "md:flex hidden"}`}>
                         <li>
                             <Link href="#" className='md:text-lg text-base font-semibold text-white uppercase'>
                                 Our Expertise

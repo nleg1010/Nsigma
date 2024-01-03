@@ -13,7 +13,7 @@ export default function Home() {
    </Head>
     <div className='bg-[#131517]'>
       <Banner />
-      <section className='py-16'>
+      <section className='py-16 -mt-28 relative z-40'>
         <div className='container mx-auto px-4 grid md:grid-cols-2 grid-cols-1 gap-7 md:-mt-[100px] mt-0'>
           {FaqsData.map((item: any, idx: number) => {
             return (

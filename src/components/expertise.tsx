@@ -4,9 +4,9 @@ import React from 'react'
 export default function Expertise() {
     return (
         <section className='py-16 relative'>
-            <Image src="/images/circle.png" alt='circle' width={180} height={180} className='absolute left-4 -z-0 opacity-40' />
-            <Image src="/images/abstract1.png" alt='abstract1' width={121} height={321} className='absolute right-4 -z-0' />
-            <div className='container mx-auto px-4'>
+            <Image src="/images/circle.png" alt='circle' width={180} height={180} className='absolute left-4 -z-0 opacity-40 w-20 md:w-[180px]' />
+            <Image src="/images/abstract1.png" alt='abstract1' width={121} height={321} className='absolute right-4 -z-0 w-20 md:w-[121px] top-0' />
+            <div className='container mx-auto px-4 relative z-10'>
                 <div>
                     <h2 className='md:text-[42px] text-2xl md:leading-[50px] font-bold text-white text-center mb-5'>
                         Our <span className='grad'> Expertise</span>
@@ -32,7 +32,7 @@ export default function Expertise() {
                     })}
                 </div>
             </div>
-            <Image src="/images/abstract2.png" alt='abstract2' width={121} height={321} className='absolute left-4 -bottom-20 -z-0' />
+            <Image src="/images/abstract2.png" alt='abstract2' width={121} height={321} className='absolute left-4 -bottom-20 -z-0 w-20 md:w-[121px]' />
         </section>
     )
 }

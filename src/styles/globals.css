@@ -4,7 +4,7 @@
 
 
 /* fonts  */
-@font-face {
+/* @font-face {
     font-family: rota;
     src: url('../../public/fonts/Rota-Black.otf');
     font-weight: 900;
@@ -42,13 +42,58 @@
     font-family: rota;
     src: url('../../public/fonts/Rota-SemiBold.otf');
     font-weight: 600;
+} */
+
+@font-face {
+    font-family: poppin;
+    src: url('../../public/fonts/poppin/Poppins-Black.ttf');
+}
+@font-face {
+    font-family: poppin;
+    src: url('../../public/fonts/poppin/Poppins-Bold.ttf');
+    font-weight: 800;
+}
+@font-face {
+    font-family: poppin;
+    src: url('../../public/fonts/poppin/Poppins-ExtraBold.ttf');
+    font-weight: 900;
+}
+@font-face {
+    font-family: poppin;
+    src: url('../../public/fonts/poppin/Poppins-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: poppin;
+    src: url('../../public/fonts/poppin/Poppins-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: poppin;
+    src: url('../../public/fonts/poppin/Poppins-SemiBold.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: roboto;
+    src: url('../../public/fonts/Roboto/Roboto-Light.ttf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: roboto;
+    src: url('../../public/fonts/Roboto/Roboto-LightItalic.ttf');
 }
 
+
+h1,h2,h3,h4,h5,h6{
+    font-family: poppin;
+}
+p{
+    font-family: roboto;
+}
 
 * body{
     margin: 0;
     box-sizing: border-box;
-    font-family: rota;
 }
 .grad{
     background: -webkit-linear-gradient(45deg, #EB9204, #83E868, #83E868);
@@ -67,7 +112,10 @@
 }
 
 ._border{
-    border: 2px dashed gray
+    border: 2px dashed gray;
+}
+._border p, ._border span{
+    font-family: poppin !important;
 }
 
 ._border::before{
