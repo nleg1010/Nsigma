@@ -32,7 +32,7 @@ export default function Expertise() {
                     })}
                 </div>
             </div>
-            <Image src="/images/abstract2.png" alt='abstract2' width={121} height={321} className='absolute left-4 -z-0' />
+            <Image src="/images/abstract2.png" alt='abstract2' width={121} height={321} className='absolute left-4 -bottom-20 -z-0' />
         </section>
     )
 }

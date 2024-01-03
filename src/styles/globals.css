@@ -2,9 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* fonts  */
+@font-face {
+    font-family: rota;
+    src: url('../../public/fonts/Rota-Black.otf');
+    font-weight: 900;
+}
+@font-face {
+    font-family: rota;
+    src: url('../../public/fonts/Rota-Bold.otf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: rota;
+    src: url('../../public/fonts/Rota-ExtraBold.otf');
+    font-weight: 800;
+}
+@font-face {
+    font-family: rota;
+    src: url('../../public/fonts/Rota-Italic.otf');
+}
+@font-face {
+    font-family: rota;
+    src: url('../../public/fonts/Rota-Light.otf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: rota;
+    src: url('../../public/fonts/Rota-Medium.otf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: rota;
+    src: url('../../public/fonts/Rota-Regular.otf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: rota;
+    src: url('../../public/fonts/Rota-SemiBold.otf');
+    font-weight: 600;
+}
+
+
 * body{
     margin: 0;
     box-sizing: border-box;
+    font-family: rota;
 }
 .grad{
     background: -webkit-linear-gradient(45deg, #EB9204, #83E868, #83E868);
@@ -20,4 +64,48 @@
     height: 100%;
     left: 50%;
     z-index: 1;
+}
+
+._border{
+    border: 2px dashed gray
+}
+
+._border::before{
+    content: '';
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 8px;
+    height: 8px;
+    background: #00EBFF;
+    border-radius: 10px;
+}
+._border::after{
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    width: 8px;
+    height: 8px;
+    background: #F6AF23;
+    border-radius: 10px;
+}
+
+._dott_bottom_left{
+    position: absolute;
+    bottom: -7px;
+    left: -7px;
+    width: 8px;
+    height: 8px;
+    background: #F7476B;
+    border-radius: 10px;
+}
+._dott_bottom_right{
+    position: absolute;
+    bottom: -7px;
+    right: -7px;
+    width: 8px;
+    height: 8px;
+    background: #92DA59;
+    border-radius: 10px;
 }
