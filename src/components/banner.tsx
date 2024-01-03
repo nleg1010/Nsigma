@@ -1,19 +1,21 @@
-import React from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import TextTransition, { presets } from 'react-text-transition';
+
 
 const TEXTS = ['Powered', 'Dependent'];
 
 export default function Banner() {
 
-    const [index, setIndex] = React.useState(0);
+    const [index, setIndex] = useState<any>(0);
 
-    React.useEffect(() => {
-        const intervalId = setInterval(
-            () => setIndex((index) => index + 1),
-            3000, // every 3 seconds
-        );
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setIndex((prevIndex: any) => prevIndex + 1);
+        }, 4000);
         return () => clearTimeout(intervalId);
     }, []);
+
+    const currentIndex = useMemo(() => index % TEXTS.length, [index, TEXTS.length]);
 
     return (
         <>
@@ -28,7 +30,7 @@ export default function Banner() {
                                         <div className='_dott_bottom_left' />
                                         <div className='_dott_bottom_right' />
                                         <TextTransition className='bg-[#20262D] !h-[56px] md:!h-[90px] px-5 py-2 _border' springConfig={presets.wobbly}>
-                                            <span className='grad'>{TEXTS[index % TEXTS.length]} </span>
+                                            <span className='grad'>{TEXTS[currentIndex % TEXTS.length]} </span>
                                         </TextTransition>
                                     </div>
                                 </div>
