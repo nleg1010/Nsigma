@@ -17,7 +17,6 @@ export default function Banner() {
 
     return (
         <>
-
             <main className="relative flex items-center justify-center h-screen mb-12 overflow-hidden -mt-20">
                 <div className="relative z-30 text-2xl bg-opacity-50 rounded-xl">
                     <div className='flex items-center justify-center bg-black/30 w-screen h-screen'>
@@ -45,10 +44,6 @@ export default function Banner() {
                     <source src="/video.mp4" type="video/mp4" />Your browser does not support the video tag.
                 </video>
             </main>
-
-
-
-           
         </>
     )
 }

@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Expertise() {
     return (
-        <section className='py-16 relative'>
+        <section className='py-16 relative' id="expertise">
             <Image src="/images/circle.png" alt='circle' width={180} height={180} className='absolute left-4 -z-0 opacity-40 w-20 md:w-[180px]' />
             <Image src="/images/abstract1.png" alt='abstract1' width={121} height={321} className='absolute right-4 -z-0 w-20 md:w-[121px] top-0' />
             <div className='container mx-auto px-4 relative z-10'>
