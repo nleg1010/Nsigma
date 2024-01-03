@@ -14,7 +14,7 @@ const Home: FC<any> = ({ engagementStrategiesRes, caseStudiesRes, expertiseRes, 
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const currentIndices = displayedData.map((item:any) => questionsRes.indexOf(item.data));
+      const currentIndices = displayedData.map((item: any) => questionsRes.indexOf(item.data));
       const nextIndex = (currentIndices[1] + 1) % questionsRes.length;
       const newIndex = nextIndex === currentIndices[0] ? (nextIndex + 1) % questionsRes.length : nextIndex;
       const newItems = [
