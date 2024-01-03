@@ -14,25 +14,25 @@ export default function Header() {
                         <Image src="/images/logo.png" alt='logo' width={156} height={48} className='z-50'/>
                     </Link>
                 </div>
-                <nav className='md:w-3/4 w-1/2 flex justify-end'>
-                    <button onClick={() => setOpen(!open)} className='md:hidden block text-3xl text-white'>
+                <nav className='md:w-3/4 w-1/2 flex justify-end '>
+                    <button onClick={() => setOpen(!open)} className='md:hidden block text-3xl text-white z-50'>
                         {
                             open ? (<IoClose />) : (<FaBars />)
                         }
                     </button>
                     <ul className={`md:flex-row z-50 flex-col gap-5 md:items-center items-start md:justify-end md:static  ${open ? "flex absolute left-0 right-0 top-16 md:p-0 px-4 py-10 bg-[#1d1a36] " : "md:flex hidden"}`}>
                         <li>
-                            <Link href="#" className='md:text-lg text-base font-semibold text-white uppercase'>
+                            <Link href="#expertise" className='md:text-lg text-base font-semibold text-white uppercase'>
                                 Our Expertise
                             </Link>
                         </li>
                         <li>
-                            <Link href="#" className='md:text-lg text-base font-semibold text-white uppercase'>
+                            <Link href="#engagement" className='md:text-lg text-base font-semibold text-white uppercase'>
                                 Engagement Strategies
                             </Link>
                         </li>
                         <li>
-                            <Link href="#" className='md:text-lg text-base font-semibold text-white uppercase'>
+                            <Link href="#casestudy" className='md:text-lg text-base font-semibold text-white uppercase'>
                                 Case Studies
                             </Link>
                         </li>
