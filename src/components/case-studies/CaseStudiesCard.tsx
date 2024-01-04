@@ -1,15 +1,18 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const CaseStudiesCard = ({data}:any) => {
   return (
-    <article className='bg-[#1E2029] rounded-[20px] overflow-hidden'>
-          <figure>
-               <Image src={data.image.asset.url} alt={data.title} width={370} height={250} className='w-full rounded-[20px] overflow-hidden'/>
-          </figure>
+    <article className='bg-[#1E2029] group rounded-[20px] overflow-hidden'>
+          <Link href={`/${data?.slug?.current}`}>
+          <figure className='rounded-[20px] cursor-pointer overflow-hidden'>
+               <Image src={data.image.asset.url} alt={data.title} width={370} height={250} className='w-full transition-all duration-200 ease-linear group-hover:scale-105 '/>
+          </figure> 
+          </Link>
           <div className='p-4 px-6'>
-               <h3 className='text-xl text-[#CACACA]'>{data.title}</h3>
-               <p className='text-[#696B76] italic mt-2 pb-2'>{data.info}</p>
+          <Link href={`/${data?.slug?.current}`}><h3 className='text-xl cursor-pointer text-white'>{data.title}</h3></Link>
+               <p className='text-lightGray italic mt-2 pb-2'>{data.info}</p>
           </div>
     </article>
   )

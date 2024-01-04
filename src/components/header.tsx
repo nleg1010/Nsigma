@@ -7,13 +7,13 @@ import { IoIosArrowDown } from "react-icons/io";
 
 export default function Header() {
     const [open, setOpen] = useState(false)
-    const [subMenu, setSubMenu] = useState(false)
+    const [subMenu, setSubMenu] = useState()
 
-    const handleSubMenuEnter = () => {
-        setSubMenu(true)
+    const handleSubMenuEnter = (idx:any) => {
+        setSubMenu(idx)
     }
-    const handleSubMenuLeave = () => {
-        setSubMenu(false)
+    const handleSubMenuLeave = (idx:any) => {
+        setSubMenu(idx)
     }
 
 
@@ -35,8 +35,8 @@ export default function Header() {
                         {
                             NavItem.map((item:any, idx) => (
                                 <li key={idx} className='relative'
-                                    onMouseEnter={handleSubMenuEnter}
-                                    onMouseLeave={handleSubMenuLeave}
+                                    onMouseEnter={()=>handleSubMenuEnter(idx)}
+                                    onMouseLeave={()=>handleSubMenuLeave(idx)}
                                 >
                                     <button className={` 
                                         ${idx + 1 === NavItem.length ? 'text-base font-bold text-white bg-custm_pink p-4 block min-w-[156px] mx-auto text-center rounded-xl'
@@ -52,7 +52,7 @@ export default function Header() {
                                         
                                     </button>
                                     {
-                                        item?.subNav?.length > 0 && subMenu && <div className='md:absolute md:pt-4 mt-4 md:mt-0 md:border-none border-l-[2px] border-custm_pink'>
+                                        item?.subNav?.length > 0 && subMenu === idx && <div className='md:absolute md:pt-4 mt-4 md:mt-0 md:border-none border-l-[2px] border-custm_pink'>
                                             <ul className='md:bg-[#20262D]/50 md:p-4 px-6 rounded-xl'>
                                                 {
                                                     item?.subNav?.map((sItem:any, id:number) => (

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { FaChevronRight, FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaChevronRight, FaEnvelope, FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
     return (
@@ -38,7 +38,7 @@ export default function Footer() {
                             <FaChevronRight />
                         </button>
                     </form>
-                    <ul className='flex items-center gap-3'>
+                    <ul className='flex items-center flex-wrap gap-3'>
                         <li>
                             <Link href="#" className='text-xl text-white hover:bg-lightGray bg-lightGray/20 h-[38px] w-[38px] inline-flex items-center justify-center rounded-full'>
                                 <FaFacebookF />
@@ -52,6 +52,21 @@ export default function Footer() {
                         <li>
                             <Link href="#" className='text-xl text-white hover:bg-lightGray bg-lightGray/20 h-[38px] w-[38px] inline-flex items-center justify-center rounded-full'>
                                 <FaLinkedinIn />
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="#" className='text-xl text-white hover:bg-lightGray bg-lightGray/20 h-[38px] w-[38px] inline-flex items-center justify-center rounded-full'>
+                                <FaInstagram />
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="#" className='text-xl text-white hover:bg-lightGray bg-lightGray/20 h-[38px] w-[38px] inline-flex items-center justify-center rounded-full'>
+                                <FaLinkedinIn />
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="#" className='text-xl text-white hover:bg-lightGray bg-lightGray/20 h-[38px] w-[38px] inline-flex items-center justify-center rounded-full'>
+                                <FaEnvelope />
                             </Link>
                         </li>
                     </ul>
@@ -140,7 +155,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <Image src="/images/abstract.png" alt='abstract' width={94} height={250} className='absolute left-4 bottom-5 -z-0' />
+            {/* <Image src="/images/abstract.png" alt='abstract' width={94} height={250} className='absolute left-4 bottom-5 -z-0' /> */}
         </footer>
     )
 }

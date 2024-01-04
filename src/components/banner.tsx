@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react'
 import TextTransition, { presets } from 'react-text-transition';
 
 
-const TEXTS = ['Powered', 'Dependent'];
+const TEXTS = ['Driven', 'Informed', 'Dependent', 'Powered', 'Enhanced'];
 
 export default function Banner() {
 
