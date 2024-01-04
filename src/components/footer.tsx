@@ -4,6 +4,16 @@ import React from 'react'
 import { FaChevronRight, FaEnvelope, FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
+
+    const handleMail = async (e: any) => {
+        e.preventDefault()
+
+        const response = await fetch("/api/mailsend");
+        const movies = await response.json();
+        console.log(movies, 'movies');
+      
+    }
+
     return (
         <footer className='bg-Gray relative'>
             <div className='container mx-auto px-4 flex md:flex-row flex-col justify-between items-center gap-7 pt-16 pb-10 border-b border-[#696B76]/40'>
@@ -34,7 +44,7 @@ export default function Footer() {
                             type='email'
                             placeholder='Your Email Adreess'
                             className='text-sm font-normal text-[#858B93] placeholder:text-[#858B93] appearance-none bg-transparent p-4 rounded-[26px] outline-none border border-[#272633] w-full' />
-                        <button className='text-2xl text-white bg-gradient-to-r from-[#EB9204] to-[#83E868] h-[38px] w-[38px] inline-flex items-center justify-center rounded-full absolute right-2 inset-y-1/2 -translate-y-1/2'>
+                        <button onClick={(e) => handleMail(e)} className='text-2xl text-white bg-gradient-to-r from-[#EB9204] to-[#83E868] h-[38px] w-[38px] inline-flex items-center justify-center rounded-full absolute right-2 inset-y-1/2 -translate-y-1/2'>
                             <FaChevronRight />
                         </button>
                     </form>
