@@ -34,7 +34,6 @@ export async function getServerSideProps() {
   const caseStudiesRes = await client.fetch(QCaseStudies);
   const expertiseRes = await client.fetch(QExpertise);
   const questionsRes = await client.fetch(QQuestions);
-  console.log("🚀 ~ file: index.tsx:38 ~ getServerSideProps ~ questionsRes:", questionsRes)
 
   return {
     props: {
