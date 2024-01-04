@@ -29,7 +29,7 @@ export default function Banner() {
                                     <div className='relative'>
                                         <div className='_dott_bottom_left' />
                                         <div className='_dott_bottom_right' />
-                                        <TextTransition className='bg-[#20262D] !h-[56px] md:!h-[90px] px-5 py-2 _border' springConfig={presets.wobbly}>
+                                        <TextTransition className='' springConfig={presets.wobbly}>
                                             <span className='grad'>{TEXTS[currentIndex % TEXTS.length]} </span>
                                         </TextTransition>
                                     </div>

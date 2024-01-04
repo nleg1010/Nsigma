@@ -1,1 +1,2 @@
-https://nsigma.vercel.app
+https://nsigma.io
+

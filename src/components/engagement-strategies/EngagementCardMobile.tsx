@@ -21,7 +21,7 @@ const EngagementCardMobile: FC<EngagementCardProps> = ({ idx, length, data }) =>
 
                <div className='mt-5'>
                     <h3 className={`text-white text-xl md:text-[26px] font-bold capitalize ${idx % 2 === 0 && 'text-right'}`}>{data.title}</h3>
-                    <p className={`mt-1.5 text-[#696B76] md:text-lg ${idx % 2 === 0 && 'text-right'}`}>{data?.info}</p>
+                    <p className={`mt-1.5 text-lightGray md:text-lg ${idx % 2 === 0 && 'text-right'}`}>{data?.info}</p>
                </div>
           </section>
      )
