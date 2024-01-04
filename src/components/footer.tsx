@@ -40,32 +40,32 @@ export default function Footer() {
                     </form>
                     <ul className='flex items-center flex-wrap gap-3'>
                         <li>
-                            <Link href="#" className='text-xl text-white hover:bg-lightGray bg-lightGray/20 h-[38px] w-[38px] inline-flex items-center justify-center rounded-full'>
+                            <Link href="#" className='text-lg text-white hover:bg-lightGray bg-lightGray/20 h-[38px] w-[38px] inline-flex items-center justify-center rounded-full'>
                                 <FaFacebookF />
                             </Link>
                         </li>
                         <li>
-                            <Link href="#" className='text-xl text-white hover:bg-lightGray bg-lightGray/20 h-[38px] w-[38px] inline-flex items-center justify-center rounded-full'>
+                            <Link href="#" className='text-lg text-white hover:bg-lightGray bg-lightGray/20 h-[38px] w-[38px] inline-flex items-center justify-center rounded-full'>
                                 <FaTwitter />
                             </Link>
                         </li>
                         <li>
-                            <Link href="#" className='text-xl text-white hover:bg-lightGray bg-lightGray/20 h-[38px] w-[38px] inline-flex items-center justify-center rounded-full'>
+                            <Link href="#" className='text-lg text-white hover:bg-lightGray bg-lightGray/20 h-[38px] w-[38px] inline-flex items-center justify-center rounded-full'>
                                 <FaLinkedinIn />
                             </Link>
                         </li>
                         <li>
-                            <Link href="#" className='text-xl text-white hover:bg-lightGray bg-lightGray/20 h-[38px] w-[38px] inline-flex items-center justify-center rounded-full'>
+                            <Link href="#" className='text-lg text-white hover:bg-lightGray bg-lightGray/20 h-[38px] w-[38px] inline-flex items-center justify-center rounded-full'>
                                 <FaInstagram />
                             </Link>
                         </li>
                         <li>
-                            <Link href="#" className='text-xl text-white hover:bg-lightGray bg-lightGray/20 h-[38px] w-[38px] inline-flex items-center justify-center rounded-full'>
+                            <Link href="#" className='text-lg text-white hover:bg-lightGray bg-lightGray/20 h-[38px] w-[38px] inline-flex items-center justify-center rounded-full'>
                                 <FaLinkedinIn />
                             </Link>
                         </li>
                         <li>
-                            <Link href="#" className='text-xl text-white hover:bg-lightGray bg-lightGray/20 h-[38px] w-[38px] inline-flex items-center justify-center rounded-full'>
+                            <Link href="#" className='text-lg text-white hover:bg-lightGray bg-lightGray/20 h-[38px] w-[38px] inline-flex items-center justify-center rounded-full'>
                                 <FaEnvelope />
                             </Link>
                         </li>
@@ -78,33 +78,33 @@ export default function Footer() {
                         </h6>
                         <ul className='flex flex-col gap-2'>
                             <li>
-                                <Link href="#" className='text-xl font-medium text-lightGray hover:text-white'>
-                                    Data & Analytics
+                                <Link href="https://nsigma.vercel.app/#expertise" className='text-xl font-medium text-lightGray hover:text-white'>
+                                    Data Strategy & Consulting
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="https://nsigma.vercel.app/#expertise" className='text-xl font-medium text-lightGray hover:text-white'>
+                                    AI/ML & Data Science
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="https://nsigma.vercel.app/#expertise" className='text-xl font-medium text-lightGray hover:text-white'>
+                                    DataOps Services
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="https://nsigma.vercel.app/#expertise" className='text-xl font-medium text-lightGray hover:text-white'>
+                                    Data Analytics & Reporting
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="https://nsigma.vercel.app/#expertise" className='text-xl font-medium text-lightGray hover:text-white'>
+                                    Software Development
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#" className='text-xl font-medium text-lightGray hover:text-white'>
-                                    AI / ML
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#" className='text-xl font-medium text-lightGray hover:text-white'>
-                                    Data Science & Predictive Edge
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#" className='text-xl font-medium text-lightGray hover:text-white'>
-                                    Date Management
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#" className='text-xl font-medium text-lightGray hover:text-white'>
-                                    Mobile
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#" className='text-xl font-medium text-lightGray hover:text-white'>
-                                    BI Automation
+                                    Business Automation
                                 </Link>
                             </li>
                         </ul>
