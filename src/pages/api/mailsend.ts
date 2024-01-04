@@ -7,7 +7,7 @@ export default function handler(
   res: NextApiResponse<any>
 ) {
      const mailerSend = new MailerSend({
-         apiKey: process.env.NEXT_PUBLIC_API_KEY,
+         apiKey: "mlsn.99549646df1c110b7e7e3d51a49ca271d16d372dbeaf308efc063c331ee001fd",
      });
 
      const sentFrom = new Sender("nsigmaglobal@gmail.com", "Nikol");
