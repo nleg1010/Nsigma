@@ -121,16 +121,6 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link href="#" className='text-xl font-medium text-lightGray hover:text-white'>
-                                    Benefits
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#" className='text-xl font-medium text-lightGray hover:text-white'>
-                                    Team
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#" className='text-xl font-medium text-lightGray hover:text-white'>
                                     Careers
                                 </Link>
                             </li>
