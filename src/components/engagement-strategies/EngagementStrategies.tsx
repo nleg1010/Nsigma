@@ -14,7 +14,7 @@ const EngagementStrategies:FC<any> = ({data}) => {
                          ))
                     }
                </div>
-               <Image src="/images/circle.svg" alt="img" width={140} height={140} className='z-[1] absolute -right-16 top-1/2'/>
+               <Image src="/images/circle.svg" alt="img" width={140} height={140} className='z-[1] animate-spin absolute -right-16 top-1/2'/>
           </div>
     </section>
   )
