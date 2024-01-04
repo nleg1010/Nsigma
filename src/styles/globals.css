@@ -83,6 +83,9 @@
     src: url('../../public/fonts/Roboto/Roboto-LightItalic.ttf');
 }
 
+a{
+    font-family: poppin;
+}
 
 h1,h2,h3,h4,h5,h6{
     font-family: poppin;
@@ -158,4 +161,30 @@ html{
     height: 8px;
     background: #92DA59;
     border-radius: 10px;
+}
+
+._contnet h2, ._contnet h3{
+    font-size: 1.8rem;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    color: rgb(38, 38, 38);
+}
+
+._contnet p{
+    color: rgb(93, 93, 93);
+    font-size: 18px;
+    font-variant: normal;
+}
+._contnet ul{
+    padding-left: 1rem;
+}
+._contnet li{
+    color: rgb(93, 93, 93);
+    font-size: 18px;
+    font-variant: normal;
+    margin: 5px 0;
+    list-style: disc;
+}
+._contnet strong{
+    color: rgb(38, 38, 38);
 }
