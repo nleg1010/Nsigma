@@ -23,7 +23,7 @@ const EngagementCard: FC<EngagementCardProps> = ({ idx, length, data }) => {
                <section className={`relative gap-6 hidden md:flex md:gap-12 justify-center pb-10 items-center ${idx % 2 === 0 ? 'flex-row-reverse' : 'flex-row'}`}>
                     <div className='w-[40%]'>
                          <figure className='bg-[#272932] rounded-xl p-6 w-full flex justify-center'>
-                              <Image src={data.image.asset.url} alt="img" width={300} height={200} className='h-[180px]'/>
+                              <Image src={data.image.asset.url} alt="img" width={300} height={200} className='h-[180px] rounded-[10px]'/>
                          </figure>
                     </div>
                     <div className={`${length !== idx && 'line-border'}`}>

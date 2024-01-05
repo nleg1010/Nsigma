@@ -4,8 +4,8 @@ import React from 'react'
 export default function Expertise({data}:any) {
     return (
         <section className='py-16 relative' id="expertise">
-            <Image src="/images/circle.png" alt='circle' width={180} height={180} className='absolute animate-spin left-4 -z-0 opacity-40 w-20 md:w-[180px]' />
-            <Image src="/images/abstract1.png" alt='abstract1' width={121} height={321} className='absolute animate-pulse right-4 -z-0 w-20 md:w-[121px] top-0  hidden md:block' />
+            {/* <Image src="/images/circle.png" alt='circle' width={180} height={180} className='absolute animate-spin left-4 -z-0 opacity-40 w-20 md:w-[180px]' />
+            <Image src="/images/abstract1.png" alt='abstract1' width={121} height={321} className='absolute animate-pulse right-4 -z-0 w-20 md:w-[121px] top-0  hidden md:block' /> */}
             <div className='container mx-auto px-4 relative z-10'>
                 <div>
                     <h2 className='md:text-[42px] text-2xl md:leading-[50px] font-bold text-white text-center mb-5'>
@@ -32,7 +32,7 @@ export default function Expertise({data}:any) {
                     })}
                 </div>
             </div>
-            <Image src="/images/abstract2.png" alt='abstract2' width={121} height={321} className='absolute animate-pulse left-4 -bottom-20 -z-0 w-20 md:w-[121px] hidden md:block' />
+            {/* <Image src="/images/abstract2.png" alt='abstract2' width={121} height={321} className='absolute animate-pulse left-4 -bottom-20 -z-0 w-20 md:w-[121px] hidden md:block' /> */}
         </section>
     )
 }

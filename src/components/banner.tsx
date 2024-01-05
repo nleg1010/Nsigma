@@ -25,16 +25,14 @@ export default function Banner() {
                         <div className="container mx-auto px-4">
                             <div className='md:text-6xl text-3xl justify-center md:leading-[70px] max-w-[700px] font-black text-white text-center mx-auto mb-5'>
                                 <div className='flex gap-3 justify-center flex-wrap'>
-                                    <h2 className='pt-2'>Data</h2>
-                                    <div className='relative'>
-                                        <div className='_dott_bottom_left' />
-                                        <div className='_dott_bottom_right' />
+                                    <h2>Data</h2>
+                                    <div className='relative overflow-hidden'>
                                         <TextTransition className='' springConfig={presets.wobbly}>
                                             <span className='grad'>{TEXTS[currentIndex % TEXTS.length]} </span>
                                         </TextTransition>
                                     </div>
                                 </div>
-                                <h2 className='mt-3'>Intelligence</h2>
+                                <h2 className='-mt-5 md:mt-2'>Intelligence</h2>
                             </div>
                             <p className='text-2xl font-medium text-center text-white max-w-[840px] mx-auto'>
                                 We know technologies and have an advanced approach to problem solving, which allow us to provide solutions to almost any engineering challange
