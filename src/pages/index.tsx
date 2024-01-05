@@ -7,6 +7,7 @@ import { QCaseStudies, QEngagementStrategies, QExpertise, QQuestions } from '../
 import { client } from '../../sanity/lib/client'
 import { FC } from 'react'
 import Questions from '@/components/questions/questions'
+import AboutUs from '@/components/about-us/AboutUs'
 
 const Home: FC<any> = ({ engagementStrategiesRes, caseStudiesRes, expertiseRes, questionsRes }) => {
 
@@ -21,6 +22,7 @@ const Home: FC<any> = ({ engagementStrategiesRes, caseStudiesRes, expertiseRes, 
         <Expertise data={expertiseRes} />
         <EngagementStrategies data={engagementStrategiesRes} />
         <CaseStudies data={caseStudiesRes} />
+        <AboutUs/>
       </div>
     </>
   )
