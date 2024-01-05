@@ -101,7 +101,7 @@ const NavItem = [
         subNav: [
             {
                 name: 'About Us',
-                link: '#'
+                link: '#about'
             }
         ]
     },
