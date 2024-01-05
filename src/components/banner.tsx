@@ -32,7 +32,7 @@ export default function Banner() {
                                         </TextTransition>
                                     </div>
                                 </div>
-                                <h2 className='-mt-5 md:mt-2'>Intelligence</h2>
+                                <h2 className='mt-2'>Intelligence</h2>
                             </div>
                             <p className='text-2xl font-medium text-center text-white max-w-[840px] mx-auto'>
                                 We know technologies and have an advanced approach to problem solving, which allow us to provide solutions to almost any engineering challange
