@@ -98,16 +98,20 @@ const NavItem = [
     {
         name: 'Case Studies',
         link: '#casestudy',
-        subNav: [
-            {
-                name: 'About Us',
-                link: '#about'
-            }
-        ]
+        // subNav: [
+        //     {
+        //         name: 'About Us',
+        //         link: '#about'
+        //     }
+        // ]
     },
+    // {
+    //     name: 'Resources',
+    //     link: '#'
+    // },
     {
-        name: 'Resources',
-        link: '#'
+        name: 'About Us',
+        link: '#about'
     },
     {
         name: 'Contact Us',
