@@ -88,27 +88,27 @@ export default function Footer() {
                         </h6>
                         <ul className='flex flex-col gap-2'>
                             <li>
-                                <Link href="https://nsigma.vercel.app/#expertise" className='text-xl font-medium text-lightGray hover:text-white'>
+                                <Link href="https://nsigma.io/#expertise" className='text-xl font-medium text-lightGray hover:text-white'>
                                     Data Strategy & Consulting
                                 </Link>
                             </li>
                             <li>
-                                <Link href="https://nsigma.vercel.app/#expertise" className='text-xl font-medium text-lightGray hover:text-white'>
+                                <Link href="https://nsigma.io/#expertise" className='text-xl font-medium text-lightGray hover:text-white'>
                                     AI/ML & Data Science
                                 </Link>
                             </li>
                             <li>
-                                <Link href="https://nsigma.vercel.app/#expertise" className='text-xl font-medium text-lightGray hover:text-white'>
+                                <Link href="https://nsigma.io/#expertise" className='text-xl font-medium text-lightGray hover:text-white'>
                                     DataOps Services
                                 </Link>
                             </li>
                             <li>
-                                <Link href="https://nsigma.vercel.app/#expertise" className='text-xl font-medium text-lightGray hover:text-white'>
+                                <Link href="https://nsigma.io/#expertise" className='text-xl font-medium text-lightGray hover:text-white'>
                                     Data Analytics & Reporting
                                 </Link>
                             </li>
                             <li>
-                                <Link href="https://nsigma.vercel.app/#expertise" className='text-xl font-medium text-lightGray hover:text-white'>
+                                <Link href="https://nsigma.io/#expertise" className='text-xl font-medium text-lightGray hover:text-white'>
                                     Software Development
                                 </Link>
                             </li>
