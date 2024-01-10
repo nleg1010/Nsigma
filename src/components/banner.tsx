@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import TextTransition, { presets } from "react-text-transition";
 import Questions from "./Questions";
 import TypeWriter from "./TypeWriter";
+import CustomLink from "./CustomLink";
 
 const TEXTS = ["Driven", "Informed", "Dependent", "Powered", "Enhanced"];
 
@@ -29,6 +30,8 @@ export default function Banner({ data }: any) {
 								</div>
 								<h2 className="mt-2">Intelligence</h2>
 							</div>
+
+						
 							<div className="text-2xl font-medium text-center text-white self-start">
 								<Questions data={data} />
 							</div>
