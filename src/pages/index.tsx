@@ -22,18 +22,18 @@ const Home: FC<any> = ({
 	questionsRes,
 	siteSetting
 }) => {
-	console.log("🚀 ~ questionsRes:", questionsRes)
+
 	return (
 		<>
 			<Head>
-				<title>Nsigma</title>
+				<title>Nsigma | Data Driven Intelligence</title>
 			</Head>
 			<div className="bg-[#000200]">
 				<Banner data={questionsRes} />
 				<Expertise data={expertiseRes} />
 				<EngagementStrategies data={engagementStrategiesRes} />
 				<CaseStudies data={caseStudiesRes} />
-				<AboutUs about={siteSetting[0]}/>
+				<AboutUs about={siteSetting[0]} />
 			</div>
 		</>
 	);
