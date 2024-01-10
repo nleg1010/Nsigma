@@ -32,7 +32,7 @@ export default function Banner({ data }: any) {
 							</div>
 
 						
-							<div className="text-2xl font-medium text-center text-white self-start">
+							<div className="md:text-2xl md:font-medium text-sm text-center text-white self-start">
 								<Questions data={data} />
 							</div>
 						</div>
