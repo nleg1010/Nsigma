@@ -210,7 +210,7 @@ export default function Footer() {
 					</div>
 					<div className="text-lightGray text-xl">
 						<h6 className="md:text-[22px] md:leading-8 text-lg font-bold text-white mb-6">
-							 Address
+						Contact 
 						</h6>
 						<p>NSigma Global <br/>
 							2915 Biscayne Blvd<br/>
