@@ -7,10 +7,10 @@ import BlockContent from "@sanity/block-content-to-react";
 
 const CaseStudiesSlug = ({ caseStudiesRes }) => {
 	return (
-		<>
+		<div className="bg-[#000200]">
 			<PageBanner title={caseStudiesRes.title} />
 			<div className="p-3">
-				<figure className="overflow-hidden flex justify-center -mt-20 mb-4">
+				<figure className="overflow-hidden flex justify-center -mt-40 mb-4">
 					<Image
 						src={caseStudiesRes.image.asset.url}
 						width={1000}
@@ -20,10 +20,10 @@ const CaseStudiesSlug = ({ caseStudiesRes }) => {
 					/>
 				</figure>
 			</div>
-			<div className="max-w-[1000px] mx-auto px-3 mb-20 md:px-0 _contnet">
+			<div className="max-w-[1000px] mx-auto px-3 pb-20 md:px-0 _contnet">
 				<BlockContent blocks={caseStudiesRes?.content} />
 			</div>
-		</>
+		</div>
 	);
 };
 

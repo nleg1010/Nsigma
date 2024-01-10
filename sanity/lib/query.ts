@@ -37,7 +37,17 @@ export const QQuestions = `*[ _type == "questions"] | order(_createdAt asc) {
      answer,
 }`
 
-export const QSiteSetting = `*[ _type == "themeOptions"] | order(_createdAt asc)`
+export const QSiteSetting = `*[ _type == "themeOptions"] | order(_createdAt asc){
+     content,
+     grid[]{
+          icon{
+               asset->{
+                    url
+               }
+          },
+          content
+     }
+}`
 
 export const QCaseStudySingle = `*[ _type == "case_studies" && slug.current == $slug][0]{
      title,

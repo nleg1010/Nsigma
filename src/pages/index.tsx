@@ -19,6 +19,7 @@ const Home: FC<any> = ({
 	caseStudiesRes,
 	expertiseRes,
 	questionsRes,
+	siteSetting
 }) => {
 	return (
 		<>
@@ -30,7 +31,7 @@ const Home: FC<any> = ({
 				<Expertise data={expertiseRes} />
 				<EngagementStrategies data={engagementStrategiesRes} />
 				<CaseStudies data={caseStudiesRes} />
-				<AboutUs />
+				<AboutUs about={siteSetting[0]}/>
 			</div>
 		</>
 	);
@@ -51,6 +52,7 @@ export async function getServerSideProps() {
 			caseStudiesRes,
 			expertiseRes,
 			questionsRes,
+			siteSetting,
 			preview: true,
 		},
 	};

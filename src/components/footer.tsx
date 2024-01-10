@@ -10,6 +10,8 @@ import {
 	FaTwitter,
 } from "react-icons/fa";
 import CustomLink from "./CustomLink";
+import { FaMobileAlt } from "react-icons/fa";
+
 
 export default function Footer() {
 	const handleMail = async (e: any) => {
@@ -192,8 +194,7 @@ export default function Footer() {
 								</Link>
 							</li>
 						</ul>
-					</div>
-					<div>
+						<div className="mt-5">
 						<h6 className="md:text-[22px] md:leading-8 text-lg font-bold text-white mb-6">
 							Help
 						</h6>
@@ -215,6 +216,24 @@ export default function Footer() {
 								</Link>
 							</li>
 						</ul>
+					</div>
+					</div>
+					<div className="text-lightGray text-xl">
+					<h6 className="md:text-[22px] md:leading-8 text-lg font-bold text-white mb-6">
+							Address / Contact
+						</h6>
+						<p>NSigma Global 
+							2915 Biscayne Blvd.
+							Suite 300
+							Miami, FL 33137</p>
+						<Link className="flex items-center gap-2 mt-4" href="mailto:info@nsigma.io">
+							<FaEnvelope />
+							<span>info@nsigma.io</span>
+						</Link>
+						<Link className="flex items-center gap-2 mt-4" href="tel:+19044694458">
+							<FaMobileAlt />	
+							<span>+1-904-469-4458</span>
+						</Link>
 					</div>
 				</div>
 			</div>
