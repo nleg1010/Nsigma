@@ -1,53 +1,32 @@
-import Image from 'next/image'
-import React, { FC, useState } from 'react'
-import EngagementCardMobile from './EngagementCardMobile'
+import Image from "next/image";
 
-interface EngagementCardProps {
-     idx: number,
-     length: number,
-     data: any
-}
+type EngagementCardProps = {
+	image: { asset: { url: string } };
+	info: string;
+	title: string;
+};
 
-const EngagementCard: FC<EngagementCardProps> = ({ idx, length, data }) => {
-     
-     const [string, setString] = useState<any>(180)
-     const [id,setId] = useState()
-
-     const handleExpand = (id:any) => {
-          setString(data.length)
-          setId(id)
-     }
-
-     return (
-          <>
-               <section className={`relative gap-6 hidden md:flex md:gap-12 justify-center pb-10 items-center ${idx % 2 === 0 ? 'flex-row-reverse' : 'flex-row'}`}>
-                    <div className='w-[40%]'>
-                         <figure className='bg-[#272932] rounded-xl p-6 w-full flex justify-center'>
-                              <Image src={data.image.asset.url} alt="img" width={300} height={200} className='h-[180px] rounded-[10px]'/>
-                         </figure>
-                    </div>
-                    <div className={`${length !== idx && 'line-border'}`}>
-                         <button className='bg-[#272932] z-10 relative rounded-full border-[2px] border-gray-700 text-white w-12 h-12 md:w-16 md:h-16 md:text-xl stroke-black/5'>0{idx}
-                         { length === idx && <div className='bg-[#1E2029] p-2 z-[9] absolute ml-6 py-16 top-[62px]'/>}
-
-                         </button>
-                    </div>
-                    <div className='w-[40%]'>
-                         <h3 className={`text-white text-xl md:text-[26px] font-bold capitalize ${idx % 2 === 0 && 'text-right'}`}>{data.title}</h3>
-                         <p className={`mt-1.5 text-[#babbbb] md:text-lg ${idx % 2 === 0 && 'text-right'}`}>
-                              {data.info.slice(0, string)}
-                              {
-                                   id !== idx &&  <button className='grad ml-1 hover:underline' onClick={()=>handleExpand(idx)}>{data.info.length > 180 && 'Read More ...'}</button>
-                              }
-                         </p>
-                    </div>
-               </section>
-               <EngagementCardMobile idx={idx} length={length} data={data}/>
-          </>
-     )
-}
-
-export default EngagementCard
-
-
-
+const EngagementCard = ({ image, info, title }: EngagementCardProps) => {
+	return (
+		<div className="w-full sm:h-[400px] xl:w-[400px] bg-transparent cursor-pointer group  lg:perspective-1000">
+			<div className="relative w-full h-full lg:preserve-3d  lg:group-hover:rotate-y-180  duration-500">
+				<Image
+					src={image.asset.url}
+					fill
+					alt={title}
+					className="hidden lg:block p-1 rounded-2xl"
+				/>
+				<div className="font-bold px-4 text-3xl bottom-4 hidden lg:block absolute text-neutral-300">
+					{title}
+				</div>
+				<div className="sm:absolute rounded-2xl lg:rotate-y-180 w-full h-full flex flex-col items-center justify-center gap-4 py-4 bg-[#272932]  overflow-hidden p-4 xl:p-10 text-neutral-300 lg:backface-hidden">
+					<div className="font-bold text-3xl block lg:hidden text-center">
+						{title}
+					</div>
+					<div className="flex flex-col space-y-5">{info}</div>
+				</div>
+			</div>
+		</div>
+	);
+};
+export default EngagementCard;
