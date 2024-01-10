@@ -19,7 +19,7 @@ export default function (req, res) {
      // step-2
      const mailData = {
           from: EMAIL,
-          to: `zunairgillani54@gmail.com`,
+          to: `nikola@nsigma.io`,
           subject: `Message From ${req.body.name.charAt(0).toUpperCase() + req.body.name.slice(1)}`,
           text: req.body.company + " | Sent from: " + req.body.email,
           html: `
