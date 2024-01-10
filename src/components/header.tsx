@@ -124,15 +124,15 @@ import { twMerge } from "tailwind-merge";
 const routes = [
 	{
 		name: "Our Expertise",
-		link: "#expertise",
+		link: "https://nsigma.io/#expertise",
 	},
 	{
 		name: "Case Studies",
-		link: "#casestudy",
+		link: "https://nsigma.io/#casestudy",
 	},
 	{
 		name: "About Us",
-		link: "#about",
+		link: "https://nsigma.io/#about",
 	},
 	{
 		name: "Contact Us",

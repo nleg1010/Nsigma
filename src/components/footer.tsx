@@ -65,7 +65,7 @@ export default function Footer() {
 					<ul className="flex items-center flex-wrap gap-3">
 						<li>
 							<Link
-								href="#"
+								href="htts://facebook.com"
 								className="text-lg text-white hover:bg-lightGray transition-colors bg-lightGray/20 h-[38px] w-[38px] inline-flex items-center justify-center rounded-full"
 							>
 								<FaFacebookF />
@@ -73,7 +73,7 @@ export default function Footer() {
 						</li>
 						<li>
 							<Link
-								href="#"
+								href="htts://x.com"
 								className="text-lg text-white hover:bg-lightGray transition-colors bg-lightGray/20 h-[38px] w-[38px] inline-flex items-center justify-center rounded-full"
 							>
 								<FaTwitter />
@@ -81,7 +81,7 @@ export default function Footer() {
 						</li>
 						<li>
 							<Link
-								href="#"
+								href="htts://linkedin.com"
 								className="text-lg text-white hover:bg-lightGray transition-colors bg-lightGray/20 h-[38px] w-[38px] inline-flex items-center justify-center rounded-full"
 							>
 								<FaLinkedinIn />
@@ -89,23 +89,16 @@ export default function Footer() {
 						</li>
 						<li>
 							<Link
-								href="#"
+								href="htts://instagram.com"
 								className="text-lg text-white hover:bg-lightGray transition-colors bg-lightGray/20 h-[38px] w-[38px] inline-flex items-center justify-center rounded-full"
 							>
 								<FaInstagram />
 							</Link>
 						</li>
+						
 						<li>
 							<Link
-								href="#"
-								className="text-lg text-white hover:bg-lightGray transition-colors bg-lightGray/20 h-[38px] w-[38px] inline-flex items-center justify-center rounded-full"
-							>
-								<FaLinkedinIn />
-							</Link>
-						</li>
-						<li>
-							<Link
-								href="#"
+								href="mailto://info@nsigma.io"
 								className="text-lg text-white hover:bg-lightGray transition-colors bg-lightGray/20 h-[38px] w-[38px] inline-flex items-center justify-center rounded-full"
 							>
 								<FaEnvelope />
@@ -176,7 +169,7 @@ export default function Footer() {
 						<ul className="flex flex-col gap-2">
 							<li>
 								<Link
-									href="#"
+									href="https://nsigma.io/"
 									className="text-xl font-medium text-lightGray hover:text-white transition-colors"
 								>
 									Our Story
@@ -206,7 +199,7 @@ export default function Footer() {
 								</li>
 								<li>
 									<Link
-										href="#"
+										href="/contact-us"
 										className="text-xl font-medium text-lightGray hover:text-white transition-colors"
 									>
 										Contact Us
