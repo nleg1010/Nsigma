@@ -1,5 +1,6 @@
 import { Variants, motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
+import CustomLink from "./CustomLink";
 
 const variantsLeft: Variants = {
 	initial: {
@@ -100,6 +101,8 @@ function Questions({ data }: QuestionsProps) {
 					{data[offset].answer}
 				</motion.div>
 			</div>
+			<h2 className="text-white mt-5">NSigma: Your New Friend To Help You Outperform Competitors with Custom AI and Data Solutions</h2>
+			<CustomLink href="/contact-us" className="font-semibold text-lg ">Get Started</CustomLink>
 		</div>
 	);
 }

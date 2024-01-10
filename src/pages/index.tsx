@@ -13,6 +13,7 @@ import {
 import { client } from "../../sanity/lib/client";
 import { FC } from "react";
 import AboutUs from "@/components/about-us/AboutUs";
+import Questions from "@/components/Questions";
 
 const Home: FC<any> = ({
 	engagementStrategiesRes,
@@ -21,6 +22,7 @@ const Home: FC<any> = ({
 	questionsRes,
 	siteSetting
 }) => {
+	console.log("🚀 ~ questionsRes:", questionsRes)
 	return (
 		<>
 			<Head>
