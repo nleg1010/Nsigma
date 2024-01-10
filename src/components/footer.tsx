@@ -119,7 +119,7 @@ export default function Footer() {
 				<div className="md:w-[70%] w-full grid md:grid-cols-3 grid-cols-1 gap-7">
 					<div>
 						<h6 className="md:text-[22px] md:leading-8 text-lg font-bold text-white mb-6">
-							Services
+							Services 
 						</h6>
 						<ul className="flex flex-col gap-2">
 							<li>
