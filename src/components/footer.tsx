@@ -16,10 +16,7 @@ import { FaMobileAlt } from "react-icons/fa";
 export default function Footer() {
 	const handleMail = async (e: any) => {
 		e.preventDefault();
-
 		const response = await fetch("/api/mailsend");
-		const movies = await response.json();
-		console.log(movies, "movies");
 	};
 
 	return (
@@ -39,7 +36,7 @@ export default function Footer() {
 					<h5 className="md:text-[34px] text-2xl font-bold text-white">
 						Ready to get started?
 					</h5>
-					<CustomLink href="#">Get Started</CustomLink>
+					<CustomLink href="/contact-us">Get Started</CustomLink>
 				</div>
 			</div>
 			<div className="container mx-auto px-4 flex md:flex-row flex-col justify-between gap-7 pt-10 pb-16 relative z-[1]">
@@ -119,7 +116,7 @@ export default function Footer() {
 				<div className="md:w-[70%] w-full grid md:grid-cols-3 grid-cols-1 gap-7">
 					<div>
 						<h6 className="md:text-[22px] md:leading-8 text-lg font-bold text-white mb-6">
-							Services 
+							Services
 						</h6>
 						<ul className="flex flex-col gap-2">
 							<li>
@@ -195,34 +192,34 @@ export default function Footer() {
 							</li>
 						</ul>
 						<div className="mt-5">
-						<h6 className="md:text-[22px] md:leading-8 text-lg font-bold text-white mb-6">
-							Help
-						</h6>
-						<ul className="flex flex-col gap-2">
-							<li>
-								<Link
-									href="#"
-									className="text-xl font-medium text-lightGray hover:text-white transition-colors"
-								>
-									FAQs
-								</Link>
-							</li>
-							<li>
-								<Link
-									href="#"
-									className="text-xl font-medium text-lightGray hover:text-white transition-colors"
-								>
-									Contact Us
-								</Link>
-							</li>
-						</ul>
-					</div>
+							<h6 className="md:text-[22px] md:leading-8 text-lg font-bold text-white mb-6">
+								Help
+							</h6>
+							<ul className="flex flex-col gap-2">
+								<li>
+									<Link
+										href="#"
+										className="text-xl font-medium text-lightGray hover:text-white transition-colors"
+									>
+										FAQs
+									</Link>
+								</li>
+								<li>
+									<Link
+										href="#"
+										className="text-xl font-medium text-lightGray hover:text-white transition-colors"
+									>
+										Contact Us
+									</Link>
+								</li>
+							</ul>
+						</div>
 					</div>
 					<div className="text-lightGray text-xl">
-					<h6 className="md:text-[22px] md:leading-8 text-lg font-bold text-white mb-6">
+						<h6 className="md:text-[22px] md:leading-8 text-lg font-bold text-white mb-6">
 							Address / Contact
 						</h6>
-						<p>NSigma Global 
+						<p>NSigma Global
 							2915 Biscayne Blvd.
 							Suite 300
 							Miami, FL 33137</p>
@@ -231,7 +228,7 @@ export default function Footer() {
 							<span>info@nsigma.io</span>
 						</Link>
 						<Link className="flex items-center gap-2 mt-4" href="tel:+19044694458">
-							<FaMobileAlt />	
+							<FaMobileAlt />
 							<span>+1-904-469-4458</span>
 						</Link>
 					</div>
