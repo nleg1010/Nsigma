@@ -79,7 +79,7 @@ function Questions({ data }: QuestionsProps) {
 
 	return (
 		<div className="w-full gap-4 flex items-center justify-center flex-col">
-			<h2 className="text-white mt-5 text-3xl">NSigma: Your New Friend To Help You Outperform Competitors with Custom AI and Data Solutions</h2>
+			<h2 className="text-white mt-5 md:text-6xl text-3xl">NSigma: Your New Friend To Help You Outperform Competitors with Custom AI and Data Solutions</h2>
 			<CustomLink href="/contact-us" className="font-semibold text-lg my-5">Get Started</CustomLink>
 			<div className="overflow-hidden relative">
 				<span className="opacity-0">{data[offset].title}</span>

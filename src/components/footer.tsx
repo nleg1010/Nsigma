@@ -95,7 +95,7 @@ export default function Footer() {
 								<FaInstagram />
 							</Link>
 						</li>
-						
+
 						<li>
 							<Link
 								href="mailto://info@nsigma.io"
@@ -210,10 +210,11 @@ export default function Footer() {
 					</div>
 					<div className="text-lightGray text-xl">
 						<h6 className="md:text-[22px] md:leading-8 text-lg font-bold text-white mb-6">
-						Name  / Address
+							Name  / Address
 						</h6>
 						<p>NSigma Global
-						2915 Biscayne Blvd</p>
+							2915 Biscayne Blvd
+							Miami, FL 33137</p>
 						<Link className="flex items-center gap-2 mt-4" href="mailto:info@nsigma.io">
 							<FaEnvelope />
 							<span>info@nsigma.io</span>
