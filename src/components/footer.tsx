@@ -210,12 +210,10 @@ export default function Footer() {
 					</div>
 					<div className="text-lightGray text-xl">
 						<h6 className="md:text-[22px] md:leading-8 text-lg font-bold text-white mb-6">
-							Address / Contact
+						Name  / Address
 						</h6>
 						<p>NSigma Global
-							2915 Biscayne Blvd.
-							Suite 300
-							Miami, FL 33137</p>
+						2915 Biscayne Blvd</p>
 						<Link className="flex items-center gap-2 mt-4" href="mailto:info@nsigma.io">
 							<FaEnvelope />
 							<span>info@nsigma.io</span>
