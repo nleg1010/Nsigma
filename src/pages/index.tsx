@@ -24,7 +24,7 @@ const Home: FC<any> = ({
 			<Head>
 				<title>Nsigma</title>
 			</Head>
-			<div className="bg-[#131517]">
+			<div className="bg-[#000200]">
 				<Banner data={questionsRes} />
 				<Expertise data={expertiseRes} />
 				<EngagementStrategies data={engagementStrategiesRes} />

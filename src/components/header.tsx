@@ -136,7 +136,7 @@ const routes = [
 	},
 	{
 		name: "Contact Us",
-		link: "#",
+		link: "/contact-us",
 	},
 ];
 
