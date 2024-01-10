@@ -3,8 +3,8 @@ import { engagement } from './schema/engagement'
 import { caseStudies } from './schema/case-studies'
 import { expertise } from './schema/expertise'
 import { questions } from './schema/questions'
-import { siteSettings } from './schema/siteSettings'
+import { themeOptions } from './schema/siteSettings'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [questions, expertise, engagement, caseStudies],
+  types: [questions, expertise, engagement, caseStudies, themeOptions],
 }

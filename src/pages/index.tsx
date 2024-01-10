@@ -8,6 +8,7 @@ import {
 	QEngagementStrategies,
 	QExpertise,
 	QQuestions,
+	QSiteSetting,
 } from "../../sanity/lib/query";
 import { client } from "../../sanity/lib/client";
 import { FC } from "react";
@@ -42,6 +43,7 @@ export async function getServerSideProps() {
 	const caseStudiesRes = await client.fetch(QCaseStudies);
 	const expertiseRes = await client.fetch(QExpertise);
 	const questionsRes = await client.fetch(QQuestions);
+	const siteSetting = await client.fetch(QSiteSetting);
 
 	return {
 		props: {

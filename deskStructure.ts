@@ -1,3 +1,5 @@
+// ./deskStructure.js
+
 export const myStructure = (S:any) =>
   S.list()
     .title('Base')
@@ -6,7 +8,7 @@ export const myStructure = (S:any) =>
         .title('Site Settings')
         .child(
           S.document()
-            .schemaType('siteSettings')
-            .documentId('siteSettings')),
-      ...S.documentTypeListItems().filter((listItem:any) => !['siteSettings'].includes(listItem.getId()))
+            .schemaType('themeOptions')
+            .documentId('themeOptions')),
+            ...S.documentTypeListItems().filter((listItem:any) => !['themeOptions'].includes(listItem.getId()))
     ])
