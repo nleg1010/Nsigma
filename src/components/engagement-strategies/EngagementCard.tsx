@@ -11,7 +11,7 @@ const EngagementCard = ({ image, info, title }: EngagementCardProps) => {
 		<div className="w-full sm:h-[400px] xl:w-[400px] bg-transparent cursor-pointer group  lg:perspective-1000">
 			<div className="relative w-full h-full lg:preserve-3d  lg:group-hover:rotate-y-180  duration-500">
 				<Image
-					src={image.asset.url}
+					src={image?.asset?.url}
 					fill
 					alt={title}
 					className="hidden lg:block p-1 rounded-2xl"
