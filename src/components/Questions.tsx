@@ -59,7 +59,7 @@ type QuestionsProps = {
 function Questions({ data }: QuestionsProps) {
 	const [offset, setOffset] = useState(0);
 	const controls = useAnimation();
-	const repeatDelay = 6000;
+	const repeatDelay = 8000;
 
 	useEffect(() => {
 		let interval: ReturnType<typeof setInterval>;
@@ -70,7 +70,7 @@ function Questions({ data }: QuestionsProps) {
 				await controls.start("slide");
 				setTimeout(() => {
 					controls.start("exit");
-				}, 3000);
+				}, 5000);
 			}, repeatDelay);
 		};
 		show();

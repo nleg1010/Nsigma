@@ -36,6 +36,7 @@ const config: Config = {
 				// custm_pink: "#F7476B",
 				Gray: "#1E2029",
 				lightGray: "#babbbb",
+				customNeutral: "#242727",
 			},
 		},
 	},
