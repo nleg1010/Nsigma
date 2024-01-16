@@ -1,8 +1,22 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { twMerge } from "tailwind-merge";
 
-export default function Expertise({ data }: any) {
+type ExpertiseProps = {
+	data: Array<{
+		icon: {
+			asset: {
+				url: string;
+			};
+		};
+		url?: string;
+		title: string;
+		info: string;
+	}>;
+};
+
+export default function Expertise({ data }: ExpertiseProps) {
 	return (
 		<section className="py-16 relative" id="expertise">
 			{/* <Image src="/images/circle.png" alt='circle' width={180} height={180} className='absolute animate-spin left-4 -z-0 opacity-40 w-20 md:w-[180px]' />
@@ -14,9 +28,10 @@ export default function Expertise({ data }: any) {
 					</h2>
 				</div>
 				<div className="bg-Gray rounded-[20px] mt-10 grid md:grid-cols-2 xl:grid-cols-3 grid-cols-1 overflow-hidden">
-					{data?.map((item: any, idx: number) => {
+					{data?.map((item, idx: number) => {
 						return (
-							<div
+							<Link
+								href={`${item?.url ?? "#"}`}
 								key={idx}
 								className={twMerge(
 									`relative flex flex-col md:flex-col-reverse group gap-4 py-6 px-8 md:py-14 md:px-16`,
@@ -39,7 +54,7 @@ export default function Expertise({ data }: any) {
 								<p className="text-base font-medium text-lightGray md:absolute md:opacity-0 group-hover:opacity-100 transition-opacity md:h-full md:w-full md:bg-black duration-300 md:top-0 md:left-0 md:p-4 md:grid md:place-items-center">
 									{item.info}
 								</p>
-							</div>
+							</Link>
 						);
 					})}
 				</div>

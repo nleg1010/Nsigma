@@ -11,7 +11,9 @@ export default function Banner() {
 							<div className="md:text-6xl text-3xl md:leading-[70px] w-full font-semibold text-white text-center  mb-5">
 								<h1>
 									AI/ML &{" "}
-									<span className="inline-block grad">Data Science</span>
+									<span className="inline-block grad">
+										Predictive Analytics
+									</span>
 								</h1>
 							</div>
 							<CustomLink href="#" className="max-w-xs font-normal">

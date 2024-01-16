@@ -3,7 +3,7 @@ import { defineType, defineField } from "sanity";
 export const aiMlWhyUs = defineType({
 	name: "aiMlWhyUs",
 	type: "document",
-	title: "Why to Choose NSigma for AI/ML and Data Science Services",
+	title: "Why to Choose NSigma for AI/ML and Predictive Analytics Services",
 	fields: [
 		defineField({
 			name: "image",

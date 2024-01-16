@@ -8,7 +8,8 @@ function ProcessSection() {
 		>
 			<div className="container flex flex-col gap-12 text-white px-4">
 				<h2 className="text-3xl md:text-5xl font-bold">
-					<span className="grad">AI/ML and Data Science</span> Step by Step:
+					<span className="grad">AI/ML and Predictive Analytics</span> Step by
+					Step:
 				</h2>
 				<div className="text-xl bg-Gray p-8 sm:p-14 rounded-2xl">
 					<div className="flex items-center flex-wrap gap-x-8 justify-center md:justify-start pb-4">

@@ -10,7 +10,7 @@ function WhatIsAiSection({ content }: WhatIsAiSectionProps) {
 		>
 			<div className="container flex flex-col gap-12 text-white px-4">
 				<h2 className="text-3xl md:text-5xl font-bold">
-					What is <span className="grad">AI/ML and Data Science </span>
+					What is <span className="grad">AI/ML and Predictive Analytics</span>
 					and how do they work together?
 				</h2>
 				<div className="text-xl whitespace-pre-line">{content}</div>

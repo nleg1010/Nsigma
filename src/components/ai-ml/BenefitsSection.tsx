@@ -13,7 +13,8 @@ function BenefitsSection({ cards }: BenefitsSectionProps) {
 		>
 			<div className="container flex flex-col gap-12 text-white px-4">
 				<h2 className="text-3xl md:text-5xl font-bold">
-					Benefits of <span className="grad">AI/ML and Data Science</span>
+					Benefits of{" "}
+					<span className="grad">AI/ML and Predictive Analytics</span>
 				</h2>
 				<div className="grid grid-cols-2 md:grid-cols-3">
 					<div className="w-full bg-Gray/10 p-4 h-[170px] hidden md:block"></div>

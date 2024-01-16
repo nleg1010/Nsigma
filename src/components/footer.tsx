@@ -12,7 +12,6 @@ import {
 import CustomLink from "./CustomLink";
 import { FaMobileAlt } from "react-icons/fa";
 
-
 export default function Footer() {
 	const handleMail = async (e: any) => {
 		e.preventDefault();
@@ -125,7 +124,7 @@ export default function Footer() {
 									href="https://nsigma.io/#expertise"
 									className="text-xl font-medium text-lightGray hover:text-white transition-colors"
 								>
-									AI/ML & Data Science
+									AI/ML & Predictive Analytics
 								</Link>
 							</li>
 							<li>
@@ -212,14 +211,23 @@ export default function Footer() {
 						<h6 className="md:text-[22px] md:leading-8 text-lg font-bold text-white mb-6">
 							Contact
 						</h6>
-						<p>NSigma Global <br />
-							2915 Biscayne Blvd<br />
-							Miami, FL 33137</p>
-						<Link className="flex items-center gap-2 mt-4" href="mailto:info@nsigma.io">
+						<p>
+							NSigma Global <br />
+							2915 Biscayne Blvd
+							<br />
+							Miami, FL 33137
+						</p>
+						<Link
+							className="flex items-center gap-2 mt-4"
+							href="mailto:info@nsigma.io"
+						>
 							<FaEnvelope />
 							<span>info@nsigma.io</span>
 						</Link>
-						<Link className="flex items-center gap-2 mt-4" href="tel:+19044694458">
+						<Link
+							className="flex items-center gap-2 mt-4"
+							href="tel:+19044694458"
+						>
 							<FaMobileAlt />
 							<span>+1-904-469-4458</span>
 						</Link>

@@ -10,7 +10,7 @@ function DataScienceSection({ content }: DataScienceSectionProps) {
 		>
 			<div className="container flex flex-col gap-12 text-white px-4">
 				<h2 className="grad text-3xl md:text-5xl font-bold">
-					AI/ML & Data Science
+					AI/ML & Predictive Analytics
 				</h2>
 				<div className="text-xl whitespace-pre-line">{content}</div>
 			</div>

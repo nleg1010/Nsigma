@@ -11,7 +11,6 @@ type WhyUsSectionProps = {
 };
 
 function WhyUsSection({ data }: WhyUsSectionProps) {
-	console.log(data);
 	return (
 		<section
 			className="w-full flex justify-center items-center py-12"
@@ -20,13 +19,13 @@ function WhyUsSection({ data }: WhyUsSectionProps) {
 			<div className="container text-white flex flex-col px-4 justify-center items-center w-full gap-12">
 				<h2 className="text-3xl md:text-5xl font-bold">
 					Why to Choose NSigma for{" "}
-					<span className="grad">AI/ML and Data Science</span> Services
+					<span className="grad">AI/ML and Predictive Analytics</span> Services
 				</h2>
 				<div className="grid xl:grid-cols-3 gap-4">
 					<div className="relative xl:col-span-2 w-full h-[500px]">
 						<Image
 							src={data.image.asset.url}
-							alt="AI/ML and Data Science"
+							alt="AI/ML and Predictive Analytics"
 							className="object-cover object-center"
 							fill
 						/>

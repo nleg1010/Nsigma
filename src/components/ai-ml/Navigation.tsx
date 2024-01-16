@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const SECTIONS = [
-	{ title: "AI/ML and Data Science", id: "ai-ml-and-data-science" },
+	{ title: "AI/ML and Predictive Analytics", id: "ai-ml-and-data-science" },
 	{ title: "What Are AI/ML", id: "what-are-ai-ml" },
 	{ title: "Our Process", id: "our-process" },
 	{ title: "Signs you need AI/ML", id: "signs-you-need-ai" },

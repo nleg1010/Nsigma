@@ -8,12 +8,13 @@ export const aiMl = defineType({
 		defineField({
 			name: "dataScience",
 			type: "text",
-			title: "AI/ML & Data Science",
+			title: "AI/ML & Predictive Analytics",
 		}),
 		defineField({
 			name: "whatAreAiMl",
 			type: "text",
-			title: "What is AI/ML and Data Science and how do they work together?",
+			title:
+				"What is AI/ML and Predictive Analytics and how do they work together?",
 		}),
 	],
 });

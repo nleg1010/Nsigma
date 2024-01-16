@@ -14,7 +14,7 @@ function SignsYouNeedAiSection({ cards }: SignsYouNeedAiSectionProps) {
 			<div className="container flex flex-col gap-12 text-white px-4">
 				<h2 className="text-3xl md:text-5xl font-bold">
 					Signs your business could use{" "}
-					<span className="grad">AI/ML and Data Science</span>
+					<span className="grad">AI/ML and Predictive Analytics</span>
 				</h2>
 				<div className="grid grid-cols-2 md:grid-cols-3">
 					{cards.map(({ title, icon }, i) => (

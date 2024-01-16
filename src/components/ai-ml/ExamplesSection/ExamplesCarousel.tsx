@@ -41,8 +41,6 @@ const EmblaCarousel: React.FC<PropType> = ({ slides, options }) => {
 		emblaApi.on("select", onSelect);
 	}, [emblaApi, onInit, onSelect]);
 
-	console.log(slides);
-
 	return (
 		<>
 			<div className="embla">

@@ -13,7 +13,9 @@ export const myStructure = (S: any) =>
 				.title("AI & ML")
 				.child(S.document().schemaType("aiMl").documentId("aiMl")),
 			S.listItem()
-				.title("Why to Choose NSigma for AI/ML and Data Science Services")
+				.title(
+					"Why to Choose NSigma for AI/ML and Predictive Analytics Services"
+				)
 				.child(S.document().schemaType("aiMlWhyUs").documentId("aiMlWhyUs")),
 			...S.documentTypeListItems().filter(
 				(listItem: any) =>

@@ -16,7 +16,7 @@ function ExamplesSection({ examples }: ExamplesSectionProps) {
 		>
 			<div className="container flex flex-col gap-12 text-white px-4">
 				<h2 className="text-3xl md:text-5xl font-bold">
-					Examples of <span className="grad">AI/ML & Data Science</span>
+					Examples of <span className="grad">AI/ML & Predictive Analytics</span>
 				</h2>
 				<div className="text-xl">
 					<ExamplesCarousel slides={examples} />

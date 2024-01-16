@@ -23,6 +23,7 @@ export const QCaseStudies = `*[ _type == "case_studies"] | order(_createdAt asc)
 export const QExpertise = `*[ _type == "expertise"] | order(_createdAt asc) {
      title,
      info,
+     url,
      icon{
           asset->{
                url
