@@ -2,7 +2,11 @@ import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 
 type BenefitsSectionProps = {
-	cards: Array<{ title: string; icon: { asset: { url: string } } }>;
+	cards: Array<{
+		title: string;
+		description: string;
+		icon: { asset: { url: string } };
+	}>;
 };
 
 function BenefitsSection({ cards }: BenefitsSectionProps) {
@@ -20,15 +24,18 @@ function BenefitsSection({ cards }: BenefitsSectionProps) {
 					<div className="w-full bg-Gray/10 p-4 h-[170px] hidden md:block"></div>
 					<div className="w-full bg-Gray/5  p-4 h-[170px] hidden md:block"></div>
 					<div className="w-full bg-Gray/5  p-4 h-[170px] col-start-1 col-end-2 row-start-2 row-end-3 hidden md:block"></div>
-					{cards.map(({ title, icon }, i) => (
+					{cards.map(({ title, icon, description }, i) => (
 						<div
 							key={i}
 							className={twMerge(
-								"w-full flex flex-col justify-between odd:bg-customNeutral even:bg-Gray p-4 h-[170px]",
+								"w-full flex flex-col justify-between odd:bg-customNeutral even:bg-Gray p-4 h-[170px] relative group",
 								i === 0 && "md:even:bg-customNeutral"
 							)}
 						>
 							<div className="text-lg md:text-2xl">{title}</div>
+							<div className="md:absolute group-hover:opacity-100 md:opacity-0 md:w-full md:h-full md:bg-black md:p-4 transition-opacity text-white md:top-0 md:left-0">
+								{description}
+							</div>
 							{!!icon && (
 								<Image
 									src={icon.asset.url}

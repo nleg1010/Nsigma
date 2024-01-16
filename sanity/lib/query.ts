@@ -67,6 +67,7 @@ export const QAiMl = `*[ _type == "aiMl"] | order(_createdAt asc)[0]{
 
 export const QAiMlSigns = `*[ _type == "aiMlSigns"] | order(_createdAt asc) {
      title,
+     description,
      icon{
           asset->{
                url
@@ -76,6 +77,7 @@ export const QAiMlSigns = `*[ _type == "aiMlSigns"] | order(_createdAt asc) {
 
 export const QAiMlBenefits = `*[ _type == "aiMlBenefits"] | order(_createdAt asc) {
      title,
+     description,
      icon{
           asset->{
                url

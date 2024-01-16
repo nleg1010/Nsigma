@@ -11,6 +11,11 @@ export const aiMlSigns = defineType({
 			title: "Title",
 		}),
 		defineField({
+			name: "description",
+			type: "text",
+			title: "Description",
+		}),
+		defineField({
 			name: "icon",
 			type: "image",
 			title: "Icon",

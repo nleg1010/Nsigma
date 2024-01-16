@@ -2,7 +2,11 @@ import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 
 type SignsYouNeedAiSectionProps = {
-	cards: Array<{ title: string; icon: { asset: { url: string } } }>;
+	cards: Array<{
+		title: string;
+		description: string;
+		icon: { asset: { url: string } };
+	}>;
 };
 
 function SignsYouNeedAiSection({ cards }: SignsYouNeedAiSectionProps) {
@@ -17,15 +21,18 @@ function SignsYouNeedAiSection({ cards }: SignsYouNeedAiSectionProps) {
 					<span className="grad">AI/ML and Predictive Analytics</span>
 				</h2>
 				<div className="grid grid-cols-2 md:grid-cols-3">
-					{cards.map(({ title, icon }, i) => (
+					{cards.map(({ title, icon, description }, i) => (
 						<div
 							key={i}
 							className={twMerge(
-								"w-full flex flex-col justify-between odd:bg-customNeutral even:bg-Gray p-4 h-[170px]",
+								"w-full flex flex-col justify-between relative group odd:bg-customNeutral even:bg-Gray p-4 h-full md:h-[170px]",
 								i === 5 && "md:even:bg-customNeutral"
 							)}
 						>
-							<div className="text-lg md:text-2xl">{title}</div>
+							<div className="text-lg md:text-2xl font-semibold">{title}</div>
+							<div className="md:absolute group-hover:opacity-100 md:opacity-0 md:w-full md:h-full md:bg-black md:p-4 transition-opacity text-white md:top-0 md:left-0">
+								{description}
+							</div>
 							{!!icon && (
 								<Image
 									src={icon.asset.url}
