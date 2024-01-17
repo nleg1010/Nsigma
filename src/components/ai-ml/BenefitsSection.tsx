@@ -20,7 +20,7 @@ function BenefitsSection({ cards }: BenefitsSectionProps) {
 					Benefits of{" "}
 					<span className="grad">AI/ML and Predictive Analytics</span>
 				</h2>
-				<div className="grid grid-cols-2 md:grid-cols-3">
+				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
 					<div className="w-full bg-Gray/10 p-4 h-[170px] hidden md:block"></div>
 					<div className="w-full bg-Gray/5  p-4 h-[170px] hidden md:block"></div>
 					<div className="w-full bg-Gray/5  p-4 h-[170px] col-start-1 col-end-2 row-start-2 row-end-3 hidden md:block"></div>

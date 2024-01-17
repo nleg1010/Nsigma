@@ -20,7 +20,7 @@ function SignsYouNeedAiSection({ cards }: SignsYouNeedAiSectionProps) {
 					Signs your business could use{" "}
 					<span className="grad">AI/ML and Predictive Analytics</span>
 				</h2>
-				<div className="grid grid-cols-2 md:grid-cols-3">
+				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
 					{cards.map(({ title, icon, description }, i) => (
 						<div
 							key={i}
