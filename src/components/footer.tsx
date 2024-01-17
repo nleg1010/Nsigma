@@ -140,7 +140,7 @@ export default function Footer() {
 									href="https://nsigma.io/#expertise"
 									className="text-xl font-medium text-lightGray hover:text-white transition-colors"
 								>
-									Data Analytics & Reporting
+									Data Engineering
 								</Link>
 							</li>
 							<li>
@@ -156,7 +156,7 @@ export default function Footer() {
 									href="#"
 									className="text-xl font-medium text-lightGray hover:text-white transition-colors"
 								>
-									Business Automation
+									BI Automation & Data Analytics
 								</Link>
 							</li>
 						</ul>

@@ -82,7 +82,7 @@ function Navbar() {
 						<div key={name} className="hidden md:block relative group">
 							<Link
 								href={link}
-								key={name}
+								key={i}
 								className={twMerge(
 									`hidden p-2 md:block md:text-lg text-base font-semibold text-white uppercase`,
 									i === routes.length - 1 &&
@@ -150,29 +150,28 @@ function Navbar() {
 					>
 						<span></span>
 						{/* Empty span here is needed so it acts as padding and doesn't break the animation */}
-						{routes.map(({ name, link, sublinks }, i) => (
-							<>
-								{sublinks != null ? (
-									<MenuItemWithSubMenu
-										item={{ name, link, subMenuItems: sublinks }}
-										toggleOpen={setOpen}
-									/>
-								) : (
-									<Link
-										href={link}
-										key={name}
-										className={twMerge(
-											`p-2 md:text-lg text-base font-semibold text-white uppercase`,
-											i === routes.length - 1 &&
-												"bg-custm_pink p-3 min-w-[156px] font-normal text-center rounded-xl"
-										)}
-										onClick={handleOpen}
-									>
-										{name}
-									</Link>
-								)}
-							</>
-						))}
+						{routes.map(({ name, link, sublinks }, i) =>
+							sublinks != null ? (
+								<MenuItemWithSubMenu
+									key={i}
+									item={{ name, link, subMenuItems: sublinks }}
+									toggleOpen={setOpen}
+								/>
+							) : (
+								<Link
+									href={link}
+									key={i}
+									className={twMerge(
+										`p-2 md:text-lg text-base font-semibold text-white uppercase`,
+										i === routes.length - 1 &&
+											"bg-custm_pink p-3 min-w-[156px] font-normal text-center rounded-xl"
+									)}
+									onClick={handleOpen}
+								>
+									{name}
+								</Link>
+							)
+						)}
 						<span></span>
 					</motion.div>
 				</div>
