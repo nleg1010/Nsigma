@@ -28,7 +28,7 @@ function BenefitsSection({ cards }: BenefitsSectionProps) {
 						<div
 							key={i}
 							className={twMerge(
-								"w-full flex flex-col justify-between odd:bg-customNeutral even:bg-Gray p-4 h-[170px] relative group",
+								"w-full flex flex-col justify-between odd:bg-customNeutral even:bg-Gray p-4 h-full md:h-[170px] relative group",
 								i === 0 && "md:even:bg-customNeutral"
 							)}
 						>

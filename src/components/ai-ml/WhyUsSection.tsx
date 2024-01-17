@@ -22,7 +22,7 @@ function WhyUsSection({ data }: WhyUsSectionProps) {
 					<span className="grad">AI/ML and Predictive Analytics</span> Services
 				</h2>
 				<div className="grid xl:grid-cols-3 gap-4">
-					<div className="relative xl:col-span-2 w-full h-[500px]">
+					<div className="relative xl:col-span-2 w-full h-[200px] sm:h-[300px] md:h-[500px]">
 						<Image
 							src={data.image.asset.url}
 							alt="AI/ML and Predictive Analytics"

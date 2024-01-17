@@ -28,8 +28,8 @@ function ProcessSection({ tabs }: ProcessSectionProps) {
 					<span className="grad">AI/ML and Predictive Analytics</span> Step by
 					Step:
 				</h2>
-				<div className="text-xl bg-Gray p-8 sm:p-14 rounded-2xl flex flex-col">
-					<div className="flex pb-8 gap-12">
+				<div className="text-xl bg-Gray p-4 sm:p-8 md:p-14 rounded-2xl flex flex-col">
+					<div className="flex pb-8 gap-2 sm:gap-12">
 						{tabs.map(({ icon, title }, i) => (
 							<button
 								key={i}
@@ -60,8 +60,8 @@ function ProcessSection({ tabs }: ProcessSectionProps) {
 								activeTab === index ? "flex" : "hidden"
 							)}
 						>
-							<div className="font-bold text-3xl">{title}</div>
-							<div>{description}</div>
+							<div className="font-bold text-2xl sm:text-3xl">{title}</div>
+							<div className="text-sm sm:text-base">{description}</div>
 						</div>
 					))}
 				</div>
