@@ -4,6 +4,7 @@ import {
 	QAiMl,
 	QAiMlBenefits,
 	QAiMlExamples,
+	QAiMlProcess,
 	QAiMlSigns,
 	QAiMlWhyUs,
 } from "../../../sanity/lib/query";
@@ -25,6 +26,7 @@ const AiMl: FC<any> = ({
 	aiMlSigns,
 	aiMlBenefits,
 	aiMlExamples,
+	aiMlProcess,
 	aiMlWhyUs,
 }) => {
 	return (
@@ -39,7 +41,7 @@ const AiMl: FC<any> = ({
 				<Divider />
 				<WhatIsAiSection content={aiMl.whatAreAiMl} />
 				<Divider />
-				<ProcessSection />
+				<ProcessSection tabs={aiMlProcess} />
 				<Divider />
 				<SignsYouNeedAiSection cards={aiMlSigns} />
 				<Divider />
@@ -61,6 +63,7 @@ export async function getServerSideProps() {
 	const aiMlSigns = await client.fetch(QAiMlSigns);
 	const aiMlBenefits = await client.fetch(QAiMlBenefits);
 	const aiMlExamples = await client.fetch(QAiMlExamples);
+	const aiMlProcess = await client.fetch(QAiMlProcess);
 	const aiMlWhyUs = await client.fetch(QAiMlWhyUs);
 
 	return {
@@ -69,6 +72,7 @@ export async function getServerSideProps() {
 			aiMlSigns,
 			aiMlBenefits,
 			aiMlExamples,
+			aiMlProcess,
 			aiMlWhyUs,
 			preview: true,
 		},

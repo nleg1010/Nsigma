@@ -37,6 +37,7 @@ const config: Config = {
 				Gray: "#1E2029",
 				lightGray: "#babbbb",
 				customNeutral: "#242727",
+				customGreen: "#82E868",
 			},
 		},
 	},

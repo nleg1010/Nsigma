@@ -95,6 +95,16 @@ export const QAiMlExamples = `*[ _type == "aiMlExamples"] | order(_createdAt asc
      description
 }`;
 
+export const QAiMlProcess = `*[ _type == "aiMlProcess"] | order(_createdAt asc) {
+     title,
+     icon{
+          asset->{
+               url
+          }
+     },
+     description
+}`;
+
 export const QAiMlWhyUs = `*[ _type == "aiMlWhyUs"] | order(_createdAt asc)[0]{
      image{
           asset->{

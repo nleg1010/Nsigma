@@ -1,6 +1,23 @@
 import Image from "next/image";
+import { useState } from "react";
+import { twMerge } from "tailwind-merge";
 
-function ProcessSection() {
+type Tab = {
+	title: string;
+	description: React.ReactNode;
+	icon: { asset: { url: string } };
+};
+
+interface ProcessSectionProps {
+	tabs: Tab[];
+}
+
+function ProcessSection({ tabs }: ProcessSectionProps) {
+	const [activeTab, setActiveTab] = useState(0);
+
+	const handleTabClick = (index: number) => {
+		setActiveTab(index);
+	};
 	return (
 		<section
 			className="w-full flex justify-center items-center py-12"
@@ -11,23 +28,42 @@ function ProcessSection() {
 					<span className="grad">AI/ML and Predictive Analytics</span> Step by
 					Step:
 				</h2>
-				<div className="text-xl bg-Gray p-8 sm:p-14 rounded-2xl">
-					<div className="flex items-center flex-wrap gap-x-8 justify-center md:justify-start pb-4">
-						<Image width={54} height={54} alt="xd" src={"/images/circle.png"} />
-						<Image width={54} height={54} alt="xd" src={"/images/circle.png"} />
-						<Image width={54} height={54} alt="xd" src={"/images/circle.png"} />
-						<Image width={54} height={54} alt="xd" src={"/images/circle.png"} />
-						<Image width={54} height={54} alt="xd" src={"/images/circle.png"} />
-						<Image width={54} height={54} alt="xd" src={"/images/circle.png"} />
+				<div className="text-xl bg-Gray p-8 sm:p-14 rounded-2xl flex flex-col">
+					<div className="flex pb-8 gap-12">
+						{tabs.map(({ icon, title }, i) => (
+							<button
+								key={i}
+								className={`relative focus:outline-none group`}
+								onClick={() => handleTabClick(i)}
+							>
+								<Image
+									src={icon.asset.url}
+									alt={title}
+									width={54}
+									height={54}
+								/>
+								<span
+									className={twMerge(
+										"absolute top-[calc(100%_+_1.75rem)] w-full bg-customGreen h-1 duration-300 opacity-0 transition-opacity left-0 group-hover:opacity-100",
+										i === activeTab && "opacity-100"
+									)}
+								></span>
+							</button>
+						))}
 					</div>
-					<div className="w-full bg-black h-[1px]"></div>
-					<div className="pt-10 flex flex-col gap-2">
-						<div className="font-bold text-2xl">
-							Predictive Analytics in Business:
+					<div className="w-full bg-black h-[2px] mb-6"></div>
+					{tabs.map(({ title, description }, index) => (
+						<div
+							key={index}
+							className={twMerge(
+								"flex-col gap-2",
+								activeTab === index ? "flex" : "hidden"
+							)}
+						>
+							<div className="font-bold text-3xl">{title}</div>
+							<div>{description}</div>
 						</div>
-						Using historical data to predict future trends and customer
-						behavior.
-					</div>
+					))}
 				</div>
 			</div>
 		</section>
