@@ -121,7 +121,7 @@ export default function Footer() {
 							</li>
 							<li>
 								<Link
-									href="https://nsigma.io/#expertise"
+									href="/ai-ml"
 									className="text-xl font-medium text-lightGray hover:text-white transition-colors"
 								>
 									AI/ML & Predictive Analytics
