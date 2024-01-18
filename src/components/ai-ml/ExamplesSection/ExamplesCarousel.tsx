@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { EmblaCarouselType, EmblaOptionsType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
-import { twMerge } from "tailwind-merge";
+import { IoChevronForwardOutline } from "react-icons/io5";
 
 type PropType = {
 	slides: Array<{
@@ -17,6 +17,8 @@ const EmblaCarousel: React.FC<PropType> = ({ slides, options }) => {
 	const [emblaRef, emblaApi] = useEmblaCarousel(options);
 	const [selectedIndex, setSelectedIndex] = useState(0);
 	const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
+	const [prevBtnDisabled, setPrevBtnDisabled] = useState(true);
+	const [nextBtnDisabled, setNextBtnDisabled] = useState(true);
 
 	const scrollTo = useCallback(
 		(index: number) => emblaApi && emblaApi.scrollTo(index),
@@ -29,6 +31,8 @@ const EmblaCarousel: React.FC<PropType> = ({ slides, options }) => {
 
 	const onSelect = useCallback((emblaApi: EmblaCarouselType) => {
 		setSelectedIndex(emblaApi.selectedScrollSnap());
+		setPrevBtnDisabled(!emblaApi.canScrollPrev());
+		setNextBtnDisabled(!emblaApi.canScrollNext());
 	}, []);
 
 	useEffect(() => {
@@ -41,22 +45,31 @@ const EmblaCarousel: React.FC<PropType> = ({ slides, options }) => {
 		emblaApi.on("select", onSelect);
 	}, [emblaApi, onInit, onSelect]);
 
+	const scrollPrev = useCallback(
+		() => emblaApi && emblaApi.scrollPrev(),
+		[emblaApi]
+	);
+	const scrollNext = useCallback(
+		() => emblaApi && emblaApi.scrollNext(),
+		[emblaApi]
+	);
+
 	return (
 		<>
-			<div className="embla">
+			<div className="relative overflow-hidden">
 				<div className="overflow-hidden" ref={emblaRef}>
-					<div className="flex">
+					<div className="flex gap-4">
 						{slides.map(({ description, image, title }, i) => (
 							<div
-								className="relative min-w-0 flex flex-col gap-4 flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_33%] md:pl-4"
+								className="relative group bg-Gray rounded-xl min-w-0 flex flex-col gap-4 flex-[0_0_100%] md:flex-[0_0_49%] lg:flex-[0_0_32%] xl:flex-[0_0_32.5%] p-4 md:pl-4"
 								key={i}
 							>
-								<div className="relative w-full h-60">
+								<div className="relative w-full h-80 group-hover:scale-105 transition-transform">
 									<Image
 										src={image.asset.url}
 										alt="Your alt text"
 										fill
-										className="object-cover"
+										className="object-contain"
 									/>
 								</div>
 								<div className="text-3xl">{title}</div>
@@ -65,19 +78,14 @@ const EmblaCarousel: React.FC<PropType> = ({ slides, options }) => {
 						))}
 					</div>
 				</div>
-			</div>
-
-			<div className="flex gap-4 w-full justify-center items-center pt-8">
-				{scrollSnaps.map((_, index) => (
-					<button
-						key={index}
-						onClick={() => scrollTo(index)}
-						className={twMerge(
-							"bg-white w-4 h-4 rounded-full transition-colors",
-							index === selectedIndex && "bg-blue-300"
-						)}
-					/>
-				))}
+				<div className="absolute w-full left-0 top-1/2 flex text-3xl items-end justify-between">
+					<button onClick={scrollPrev} disabled={prevBtnDisabled}>
+						<IoChevronForwardOutline className="rotate-180" />
+					</button>
+					<button onClick={scrollNext} disabled={nextBtnDisabled}>
+						<IoChevronForwardOutline />
+					</button>
+				</div>
 			</div>
 		</>
 	);
