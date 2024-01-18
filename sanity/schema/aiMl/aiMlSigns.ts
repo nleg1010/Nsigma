@@ -3,7 +3,7 @@ import { defineType, defineField } from "sanity";
 export const aiMlSigns = defineType({
 	name: "aiMlSigns",
 	type: "document",
-	title: "Signs you business could use AI/ML and Predictive Analytics",
+	title: "AI/ML Signs",
 	fields: [
 		defineField({
 			name: "title",

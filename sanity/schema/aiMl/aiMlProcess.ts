@@ -3,7 +3,7 @@ import { defineType, defineField } from "sanity";
 export const aiMlProcess = defineType({
 	name: "aiMlProcess",
 	type: "document",
-	title: "AI/ML and Predictive Analytics Step by Step:",
+	title: "AI/ML Steps",
 	fields: [
 		defineField({
 			name: "title",
