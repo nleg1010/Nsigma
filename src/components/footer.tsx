@@ -206,6 +206,14 @@ export default function Footer() {
 								</li>
 								<li>
 									<Link
+										href="/cookies-policy"
+										className="text-xl font-medium text-lightGray hover:text-white transition-colors"
+									>
+										Cookies Policy
+									</Link>
+								</li>
+								<li>
+									<Link
 										href="/contact-us"
 										className="text-xl font-medium text-lightGray hover:text-white transition-colors"
 									>
