@@ -11,8 +11,8 @@ const CaseStudiesCard = ({data}:any) => {
           </figure> 
           </Link>
           <div className='p-4 px-6'>
-          <Link href={`/${data?.slug?.current}`}><h3 className='text-xl cursor-pointer text-white'>{data.title}</h3></Link>
-               <p className='text-lightGray italic mt-2 pb-2'>{data.info}</p>
+          <Link href={`/${data?.slug?.current}`}><h3 className='text-xl min-h-[56px] cursor-pointer text-white'>{data.title}</h3></Link>
+               <p className='text-lightGray italic mt-2 pb-2 2xl:min-h-[105px] lg:min-h-[128px]'>{data.info}</p>
           </div>
     </article>
   )
