@@ -13,23 +13,21 @@ import {
 import { client } from "../../sanity/lib/client";
 import { FC } from "react";
 import AboutUs from "@/components/about-us/AboutUs";
-import Questions from "@/components/Questions";
 
 const Home: FC<any> = ({
 	engagementStrategiesRes,
 	caseStudiesRes,
 	expertiseRes,
 	questionsRes,
-	siteSetting
+	siteSetting,
 }) => {
-
 	return (
 		<>
 			<Head>
 				<title>Nsigma | Data Driven Intelligence</title>
 			</Head>
 			<div className="bg-[#000200]">
-				<Banner data={questionsRes} />
+				<Banner />
 				<Expertise data={expertiseRes} />
 				<EngagementStrategies data={engagementStrategiesRes} />
 				<CaseStudies data={caseStudiesRes} />
